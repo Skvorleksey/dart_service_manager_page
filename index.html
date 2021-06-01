@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Dart</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -16,9 +16,14 @@
                         <a href="" class="logo">
                             <img class="logo__image" height="30" src="img/Shape 1.png">
                             <p class="logo__text">Dart</p>
-                            <p class="logo__text">Service manager</p>
+                            <p class="logo__text tagline">Service manager</p>
                         </a>
                         <nav>
+                            <p class="menu">
+                                <span class="menu_icon">
+
+                                </span>
+                            </p>
                             <ul>
                                 <li><a href="">Home</a></li>
                                 <li><a href="">Service</a></li>
@@ -39,16 +44,17 @@
                             debitis molestiae ut, laborum aspernatur pariatur, aperiam sequi inventore
                             ullam porro esse qui tempora assumenda, nulla laudantium soluta tempore rerum hic!</p>
                         </div>
+                        
                         <div class="banner__main__buttons">
                             <button class="button__buy">Buy now</button>
                             <button class="button__try">Try for free</button>
                         </div>
                     </div>
                     <div class="banner__video">
-                        
-                        <video src="" poster="img/video_poster.jpg"></video>
+                        <iframe class="video_frame-hidden" width="560" height="315" src="https://www.youtube.com/embed/WRC78QhtCbE?start=16" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <video class="video_video" src="" poster="img/video_poster.jpg"></video>
                         <div class="video__fog">
-                            <button>></button>
+                            <button class="video_button">></button>
                             <br>
                             <p>watch the video</p>
                         </div>
@@ -246,20 +252,23 @@
             </div>
         </div>
     </div>
+    
     <div class="contact__us__background">
-        <div class="contact__us">
-            <h2>Contact Us</h2>
-            <p class="contact__us__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, molestiae vel. Dignissimos provident amet ducimus consectetur aut. Dolores?</p>
-            <div class="form">
-            <form action="">
-                <input type="text" placeholder="First Name" class="input">
-                <input type="text" placeholder="Last Name" class="input">
-                <input type="text" placeholder="Email" class="input">
-                <input type="text" placeholder="Phone" class="input">
-                <input type="text" placeholder="Message" class="message">
-                <p class="checkbox"><input type="checkbox">subscribe to the newsletter</p>
-                <input type="submit" value="send" class="send__button">
-            </form>
+        <div class="container">
+            <div class="contact__us">
+                <h2>Contact Us</h2>
+                <p class="contact__us__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, molestiae vel. Dignissimos provident amet ducimus consectetur aut. Dolores?</p>
+                <div class="form">
+                <form action="">
+                    <input type="text" placeholder="First Name" class="input">
+                    <input type="text" placeholder="Last Name" class="input">
+                    <input type="text" placeholder="Email" class="input">
+                    <input type="text" placeholder="Phone" class="input">
+                    <input type="text" placeholder="Message" class="message">
+                    <p class="checkbox"><input type="checkbox">subscribe to the newsletter</p>
+                    <input type="submit" value="send" class="send__button">
+                </form>
+                </div>
             </div>
         </div>
     </div>
@@ -271,10 +280,10 @@
     <footer class="footer">
         <div class="container">
             <div class="footer__content">
-                <a href="" class="logo">
+                <a href="" class="footer__logo">
                     <img class="logo__image" height="30" src="img/Shape 1.png">
-                    <p class="logo__text">Dart</p>
-                    <p class="logo__text">Service manager</p>
+                    <p class="footer__logo__text">Dart</p>
+                    <p class="footer__logo__text">Service manager</p>
                 </a>
                 <ul class="footer__nav">
                     <li>Home</li>
@@ -291,6 +300,23 @@
             </div>
         </div>
     </footer>
-    <div class="abs"></div>
+
+    <script>
+        (() => {
+            const videoButton = document.querySelector('.video_button');
+            const videoFrame = document.querySelector('.video_frame-hidden');
+            const videoFog = document.querySelector('.video__fog');
+            const videiVideo = document.querySelector('.video_video');
+
+
+            videoButton.addEventListener('click', () => {
+                videoFrame.classList.toggle('video_frame-active');
+                videoFrame.classList.toggle('video_frame-hidden');
+                videoFog.classList.toggle('video_fog-hidden');
+                videiVideo.classList.toggle('video_video-hidden');
+            });
+        })();
+    </script>
+
 </body>
 </html>
