@@ -56,7 +56,8 @@ a{
 
 @media(min-width: 990px){
     .banner__top{
-        background-image: linear-gradient( -143deg, rgb(0 184 212 / 0.5), rgb(29 233 182 / 1)),url(../img/BG.jpg);
+        background: linear-gradient( -143deg, rgb(0 184 212 / 0.5), rgb(29 233 182 / 1)),url(../img/BG.jpg) no-repeat;
+        background-size: cover;
         min-height: 750px;
         min-width: 300px;
         padding-top: 50px;
@@ -644,7 +645,8 @@ header nav ul li a{
 
 
 .say__about{
-    background-image: linear-gradient( -143deg, rgb(0 184 212 / 0.5), rgb(29 233 182 / 1)), url(../img/say_about.jpg);
+    background: linear-gradient( -143deg, rgb(0 184 212 / 0.5), rgb(29 233 182 / 1)), url(../img/say_about.jpg) no-repeat;
+    background-size: cover;
 }
 
 @media(min-width: 990px){
