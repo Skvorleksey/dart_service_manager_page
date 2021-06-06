@@ -216,18 +216,56 @@
                     <button>Get started</button>
                 </div>
                 <div class="comments">
-                    <img src="img/keyboard_arrow_up.png" class="arrow" alt="">
-                    <img src="img/Avatar1.png" alt="">
-                    <div>
-                        <p>John Doe</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p>
-                    </div>
-                    <img src="img/Avatar2.png" alt="">
-                    <div>
-                        <p>Khalessi</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p>
-                    </div>
-                    <img src="img/keyboard_arrow_down.png" class="arrow" alt="">
+                    <img src="img/keyboard_arrow_up.png" class=" arrow arrow_up" alt="">
+                    
+                    <div class="comments_box">
+                        <div class="all_comments_box">
+                            <div class="single_comment_box">
+                                <div class="single_comment">
+                                    <img src="img/Avatar1.png" alt="">
+                                    <div>
+                                        <p>John Doe</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <div class="single_comment_box">
+                                <div class="single_comment">
+                                    <img src="img/Avatar2.png" alt="">
+                                    <div>
+                                        <p>Khalessi</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="single_comment_box">
+                                <div class="single_comment">
+                                    <img src="img/Avatar1.png" alt="">
+                                    <div>
+                                        <p>Second John Doe</p>
+                                        <p>His second Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="single_comment_box">
+                                <div class="single_comment">
+                                    <img src="img/Avatar2.png" alt="">
+                                    <div>
+                                        <p>Second Khalessi</p>
+                                        <p>Her second Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+
+
+                    </div> 
+
+                    <img src="img/keyboard_arrow_down.png" class="arrow arrow_down" alt="">
                 </div>
             </div>
         </div>
@@ -301,22 +339,7 @@
         </div>
     </footer>
 
-    <script>
-        (() => {
-            const videoButton = document.querySelector('.video_button');
-            const videoFrame = document.querySelector('.video_frame-hidden');
-            const videoFog = document.querySelector('.video__fog');
-            const videiVideo = document.querySelector('.video_video');
-
-
-            videoButton.addEventListener('click', () => {
-                videoFrame.classList.toggle('video_frame-active');
-                videoFrame.classList.toggle('video_frame-hidden');
-                videoFog.classList.toggle('video_fog-hidden');
-                videiVideo.classList.toggle('video_video-hidden');
-            });
-        })();
-    </script>
+    <script src="script.js"></script>
 
 </body>
 </html>
